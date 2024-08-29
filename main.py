@@ -1,3 +1,4 @@
+#Load dependencies
 from tkinter import *
 from tkinter import ttk, messagebox
 import datetime
@@ -6,17 +7,19 @@ from PIL import ImageTk, Image
 import os
 import webbrowser
 
-
+# Set up Window
 root = Tk()
 root.geometry("1000x550")
 root.resizable(False, False)
 
+# Set up program variables
 loaded_images = []
 global user
 global passw
 user = ""
 passw = ""
-    
+
+# Creates the main menu
 def main():
     m_frame = Frame(root)
     m_frame.pack()
@@ -37,7 +40,8 @@ def main():
     account = Button(m_frame, width=25, height=13, text="Manage Account", command= lambda:[m_frame.destroy(), login()], font=(15))
     account.grid(column=3, row=1, padx=10, pady=10)
     account.grid_propagate(False)
-    
+
+# Creates the collection window
 def collection():
     c_frame = Frame(root)
     c_frame.pack()
@@ -92,7 +96,7 @@ def collection():
     back = Button(c_frame, text="Back", command= lambda:[c_frame.destroy(), main()])
     back.pack(pady=5)
 
-
+# Calculates the next collection day
 def calculate_day(day, month, is_recycling, c_frame):
     collection_day = int(day)
     collection_month = int(month)
@@ -124,7 +128,7 @@ def calculate_day(day, month, is_recycling, c_frame):
         c_frame.forget()
     reminder(collection_day, collection_month, recycling)
     
-
+# Creates the reminder window
 def reminder(day, month, is_recycling):
     c_frame = None
     r_frame = Frame(root)
@@ -149,6 +153,7 @@ def reminder(day, month, is_recycling):
     back = Button(r_frame, text="Back", command= lambda:[r_frame.destroy(), main()])
     back.pack()
 
+# Creates the recycling guide window
 def guides():
     data = load_data()
     g_frame = Frame(root)
@@ -166,6 +171,7 @@ def guides():
     back = Button(g_frame, text="Back", command= lambda:[g_frame.destroy(), main()])
     back.pack()
 
+# Loads the data from the excel file
 def load_data():
     guide_data = []
     path = r"iteration1\testdatabase.xlsx"
@@ -180,7 +186,8 @@ def load_data():
         
         guide_data.append(row)
     return guide_data
-            
+
+# Creates the information panels for the recycling guide
 def info_panels(data):
     info_panels = []
     for i in range(0, len(data)):
@@ -191,11 +198,13 @@ def info_panels(data):
         info_panels.append(frame)
     return info_panels
 
+# Loads the information panels
 def load_panels(panel):
     panel.pack()
     back = Button(panel, text="Back", command= lambda:[panel.destroy(), guides()])
     back.pack()
 
+# Creates the profile window
 def profile():
     p_frame = Frame(root)
     p_frame.pack()
@@ -220,13 +229,15 @@ def profile():
     delete = Button(p_frame, text="Delete Account", command= lambda:[delete_account(), p_frame.destroy()])
     delete.grid(row=5, columnspan=2)
 
+# Logs out the user
 def log_out():
     global user
     global passw
     user = ""
     passw = ""
     main()
-    
+
+# Deletes the user account
 def delete_account():
     d_frame = Frame(root)
     d_frame.pack()
@@ -239,7 +250,7 @@ def delete_account():
     back = Button(d_frame, text="No", command= lambda:[d_frame.destroy(), profile()])
     back.pack()
         
-
+# Creates the login window
 def login():
     try:
         f = open('iteration1/info.txt', 'r')
@@ -283,6 +294,7 @@ def login():
     back = Button(l_frame, text="Back", command= lambda:[l_frame.destroy(), main()])
     back.grid(row=7, columnspan=2, pady=(10,0))
 
+# Checks the login details
 def check_login(username, password, l_frame):
     with open("iteration1/info.txt", "r") as file:
         for line in file:
@@ -300,6 +312,7 @@ def check_login(username, password, l_frame):
     info_message = Label(l_frame, text="Incorrect username or password")
     info_message.grid(row=4, columnspan=2, pady=5)
 
+# Creates the register account window
 def register_account():
     r_frame = Frame(root)
     r_frame.pack()
@@ -328,6 +341,7 @@ def register_account():
     Label(r_frame, text="Already have an account?").grid(row=6, columnspan=2, pady=(10,0))
     Button(r_frame, text="Login", command= lambda:[login(), r_frame.destroy()]).grid(row=7, columnspan=2)
 
+# Creates the account
 def create_account(username, password, error_message, r_frame):
     if username == "" or password == "":
         error_message.config(text="Please enter a username and password", wraplength=140, pady=5)
