@@ -26,6 +26,10 @@ class Program():
         banner_img = ImageTk.PhotoImage(banner_img)
         self.banner_image.append(banner_img)
 
+        back_img = Image.open(r"iteration2/images/back.png")
+        back_img = ImageTk.PhotoImage(back_img)
+        self.banner_image.append(back_img)
+
         self.banner(self.root)
         MainMenu(self.root)
         self.root.mainloop()
@@ -41,7 +45,7 @@ class Program():
         cls.heading = Label(cls.banner_frame, text="", font=("Calibri", 40, "bold"), fg="green", bg="white")
         cls.heading.grid(row=0,column=0)
 
-        cls.back_button = Button(cls.banner_frame, text="Back", font=("Calibri", 15))
+        cls.back_button = Button(cls.banner_frame, image=cls.banner_image[1], font=("Calibri", 15))
 
 #   Return to the previous page
     @classmethod
@@ -185,7 +189,6 @@ class Register():
     @classmethod
     def check_address(cls, address):
         url = "http://163.47.222.43:80/api/v1/rr"
-        #url = "http://localhost:8080/api/v1/rr"
         parameters = {'addr': address}
         response = requests.get(url, params=parameters)
         data = response.json()
@@ -315,7 +318,6 @@ class Collection():
 #   Get the collection dates from the API
     def get_collection_date(self):
         url = "http://163.47.222.43:80/api/v1/rr"
-        #url = "http://localhost:8080/api/v1/rr"
         parameters = {'addr': Program.address}
         response = requests.get(url, params=parameters)
         data = response.json()
