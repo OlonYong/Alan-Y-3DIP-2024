@@ -1,0 +1,6 @@
+openpyxl
+tkinter
+datetime
+PIL
+os
+webbrowser
