@@ -22,11 +22,11 @@ class Program():
         self.root.tk.call('tk', 'scaling', scaling_factor)
 
 #       Load the banner image
-        banner_img = Image.open(r"iteration2/images/banner.png")
+        banner_img = Image.open(r"assets/iteration2/images/banner.png")
         banner_img = ImageTk.PhotoImage(banner_img)
         self.banner_image.append(banner_img)
 
-        back_img = Image.open(r"iteration2/images/back.png")
+        back_img = Image.open(r"assets/iteration2/images/back.png")
         back_img = ImageTk.PhotoImage(back_img)
         self.banner_image.append(back_img)
 
@@ -202,7 +202,7 @@ class Register():
         username = self.entry_username.get()
         password = self.entry_password.get()
         address = self.entry_address.get()
-        with open(r"iteration2\details.txt", "a") as file:
+        with open(r"assets/iteration2\details.txt", "a") as file:
             file.write(f"{username[::-1]},{password[::-1]},{address[::-1]}\n")
         Program.details(username, password, address)
         MainMenu(self.master)
@@ -253,7 +253,7 @@ class Login:
             self.error_label.config(text="Please fill in all fields.")
             return
         try:
-            with open(r"iteration2\details.txt", "r") as file:
+            with open(r"assets/iteration2\details.txt", "r") as file:
                 for line in file:
                     username, password, address = line.replace("\n","").split(",")
                     if username[::-1] == self.entry_username.get() and password[::-1] == self.entry_password.get():
@@ -333,18 +333,18 @@ class Collection():
 
 #   Loads the images for the bins
     def load_images(self):
-        img_rubbish = Image.open(r"iteration2\images\rubbish.png")
+        img_rubbish = Image.open(r"assets/iteration2\images\rubbish.png")
         img_rubbish = img_rubbish.resize((130, 160))
         self.img_rubbish = ImageTk.PhotoImage(img_rubbish)
         self.images.append(self.img_rubbish)
 
-        img_foodscraps = Image.open(r"iteration2\images\foodscraps.png")
+        img_foodscraps = Image.open(r"assets/iteration2\images\foodscraps.png")
         img_foodscraps = img_foodscraps.resize((130, 160))
         self.img_foodscraps = ImageTk.PhotoImage(img_foodscraps)
         self.images.append(self.img_foodscraps)
 
         if self.recycling:
-            img_recycle = Image.open(r"iteration2\images\recycle.png")
+            img_recycle = Image.open(r"assets/iteration2\images\recycle.png")
             img_recycle = img_recycle.resize((130, 160))
             self.img_recycle = ImageTk.PhotoImage(img_recycle)
             self.images.append(self.img_recycle)
@@ -410,9 +410,9 @@ class Profile:
                 messagebox.showinfo("Error", "Address not found, please try again.")
                 return
 
-        with open(r"iteration2\details.txt", "r") as file:
+        with open(r"assets/iteration2\details.txt", "r") as file:
             data = file.readlines()
-        with open(r"iteration2\details.txt", "w") as file:
+        with open(r"assets/iteration2\details.txt", "w") as file:
             for line in data:
                 if Program.username in line[::-1]:
                     line = f"{Program.username[::-1]},{self.password_entry.get()[::-1]},{self.address_entry.get()[::-1]}\n"
@@ -455,7 +455,7 @@ class Guide:
 
 #   Load the data from the external file
     def load_data(self):
-        with open(r"iteration2\data.json", "r") as file:
+        with open(r"assets/iteration2\data.json", "r") as file:
             data = json.load(file)
             categories = list(data.keys())
             return data, categories
