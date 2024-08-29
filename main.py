@@ -1,8 +1,8 @@
-# Load dependencies
+# load dependencies
 from tkinter import *
 from PIL import Image, ImageTk
-from ctypes import windll
-import requests
+from ctypes import windll #DPI awareness
+import requests #Web scraping
 from tkinter import messagebox
 from datetime import datetime
 import json
@@ -43,11 +43,13 @@ class Program():
 
         cls.back_button = Button(cls.banner_frame, text="Back", font=("Calibri", 15))
 
+#   Return to the previous page
     @classmethod
     def back(cls, frame):
         frame.destroy()
         MainMenu(cls.banner_frame.master)
 
+#   Update the banner title and back button
     @classmethod
     def update_banner(cls, title, frame):
         if title == "Main menu":
@@ -58,6 +60,7 @@ class Program():
         cls.heading.config(text=title)
         cls.back_button.config(command=lambda:cls.back(frame))
 
+#   Save the account details
     @classmethod
     def details(cls, username, password, address):
         global logged_in
@@ -101,7 +104,7 @@ class MainMenu():
             acc = "Log in"
             func = lambda:[self.main_menu_frame.forget(), Login(self.master)]
 
-        self.account = Button(content_frame, width=30, height=15, text=acc, command= func, font=("Calibri", 20, "bold"), fg="Green", bg="#e2e2e2")
+        self.account = Button(content_frame, width=30, height=15, text=acc, command= func, font=("Calibri", 20, "bold"), fg="Green")
         self.account.grid(column=3, row=1, padx=10, pady=10)
         self.account.grid_propagate(False)
         self.check_account_status()
@@ -129,7 +132,7 @@ class Register():
         self.master.title("Register Account")
         self.main()
 
-# Main page content
+# Main page content 
     def main(self):
         self.register_frame = Frame(self.master, bg="white")
         self.register_frame.pack()
@@ -166,31 +169,22 @@ class Register():
         login = Button(self.register_frame, text="Login", command=lambda:[Login(self.master), self.register_frame.forget()], font=("Calibri", 15), width=35)
         login.pack()
 
-#   Check if all details are valid before creating an account
+#   Check if the details are correct before creating the account
     def check_details(self):
         if self.entry_username.get() == "" or self.entry_password.get() == "" or self.entry_address.get() == "":
             self.error_label.config(text="Please fill in all fields.")
             return False
         
-        self.master.config(cursor="watch")
-        self.master.update()
-        
         valid = self.check_address(self.entry_address.get())
-        for a in range(1000000):
-            pass
-        print("done")
-
-        self.master.config(cursor="")
-        self.master.update()
-
         if valid:
             self.create_account()
+
         else:
             self.error_label.config(text="Address not found, please try again.")
     
     @classmethod
     def check_address(cls, address):
-        url = "http://carouselhomenz.asuscomm.com:28180/api/v1/rr"
+        url = "http://163.47.222.43:80/api/v1/rr"
         #url = "http://localhost:8080/api/v1/rr"
         parameters = {'addr': address}
         response = requests.get(url, params=parameters)
@@ -320,7 +314,7 @@ class Collection():
 
 #   Get the collection dates from the API
     def get_collection_date(self):
-        url = "http://carouselhomenz.asuscomm.com:28180/api/v1/rr"
+        url = "http://163.47.222.43:80/api/v1/rr"
         #url = "http://localhost:8080/api/v1/rr"
         parameters = {'addr': Program.address}
         response = requests.get(url, params=parameters)
@@ -330,11 +324,12 @@ class Collection():
         self.foodscraps_date = data['foodscraps']
         if self.rubbish_date == self.recycling_date:
             self.recycling = True
-
+        else:
+            self.recycling = False
         date_object = datetime.strptime(self.rubbish_date, "%Y-%m-%d")
         self.formatted_date = date_object.strftime("%d/%m/%y")
 
-#   Load the images for the bins
+#   Loads the images for the bins
     def load_images(self):
         img_rubbish = Image.open(r"iteration2\images\rubbish.png")
         img_rubbish = img_rubbish.resize((130, 160))
@@ -424,6 +419,7 @@ class Profile:
         Program.details(Program.username, self.password_entry.get(), self.address_entry.get())
         self.profile_frame.update()
 
+#   Log out of the account
     def log_out(self):
         global logged_in
         logged_in = False
@@ -443,7 +439,7 @@ class Guide:
         self.guide_frame.pack()
         Program.update_banner(title = "Disposal Guide", frame=self.guide_frame)
 
-        buttons_frame = Frame(self.guide_frame)
+        buttons_frame = Frame(self.guide_frame, bg="white")
         buttons_frame.pack()
         buttons = []
         data, categories = self.load_data()
@@ -480,10 +476,10 @@ class Info:
         frame1 = Frame(self.info_frame, bg="white")
         frame1.grid(row=0, column=0, sticky="nw", padx=20, pady=20)
 
-        frame2 = Frame(self.info_frame)
+        frame2 = Frame(self.info_frame, bg="white")
         frame2.grid(row=0, column=1, sticky="new")
 
-        frame3 = Frame(self.info_frame)
+        frame3 = Frame(self.info_frame, bg="white")
         frame3.grid(row=0, column=2, sticky="ne", padx=20)
 
         self.info_frame.grid_columnconfigure(0, weight=1)
@@ -492,7 +488,7 @@ class Info:
         self.info_frame.grid_rowconfigure(0, weight=1)
 
         Label(frame1, text=f"Types of {self.category}", font=("Calibri", 30), fg="brown", bg="white").pack()
-        Message(frame1, text=self.data[self.category]["type"], font=("Calibri", 18)).pack()
+        Message(frame1, text=self.data[self.category]["type"], font=("Calibri", 18), bg="white").pack()
 
         Label(frame2, text="Yellow recycling bin", font=("Calibri", 30), fg="#d5c400", bg="white").pack()
         Message(frame2, text=self.data[self.category]["recycle"], font=("Calibri", 18), bg="white").pack()
