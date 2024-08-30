@@ -12,8 +12,8 @@ class Login:
         # Import the tcl file
         self.root.tk.call("source", r"iteration3\Forest-ttk-theme-master\forest-dark.tcl")
         ttk.Style().theme_use(r'forest-dark')
-
-        self.l_frame = Frame(self.root, background="blue")
+        
+        self.l_frame = ttk.Frame(self.root)
         self.l_frame.grid(row=0, column=0, sticky="nsew")
         self.r_frame = ttk.Frame(self.root)
         self.r_frame.grid(row=0, column=1, sticky="nsew")
@@ -36,10 +36,9 @@ class Login:
         title_lbl.grid(row=0, column=1)
 
         self.root.after(150, self.get_frame_size)
-        
-        self.tabs = ttk.Notebook(self.l_frame)
-        self.tabs.grid(row=1, sticky="nsew")
 
+        self.tabs = ttk.Notebook(self.l_frame, style="TFrame")
+        self.tabs.grid(row=1)
 
         self.signup_tab = ttk.Frame(self.tabs)
         self.signin_tab = ttk.Frame(self.tabs)
@@ -49,25 +48,49 @@ class Login:
         self.create_signin_tab()
         self.create_signup_tab()
 
+        self.anonnymous_button = ttk.Button(self.l_frame, text="Continue without signing in")
+        self.anonnymous_button.grid(pady=(20, 0))
+
     def create_signin_tab(self):
-        username_entry = ctk.CTkEntry(self.signin_tab)
-        username_entry.pack()
+        self.signin_frame = ttk.Frame(self.signin_tab)
+        self.signin_frame.pack()
+
+        username_label = ttk.Label(self.signin_tab, text="Username")
+        username_label.pack(pady=(20, 0))
+
+        username_entry = ttk.Entry(self.signin_tab)
+        username_entry.pack(pady=(5, 15))
+
+        password_label = ttk.Label(self.signin_tab, text="Password")
+        password_label.pack()
 
         password_entry = ttk.Entry(self.signin_tab)
-        password_entry.pack()
+        password_entry.pack(pady=(5, 15))
 
-        login_button = ttk.Button(self.signin_tab, text="Login")
+        login_button = ttk.Button(self.signin_tab, text="Sign In")
         login_button.pack()
 
     def create_signup_tab(self):
+        self.signup_frame = ttk.Frame(self.signup_tab)
+        self.signup_frame.pack()
+
+        username_label = ttk.Label(self.signup_tab, text="Username")
+        username_label.pack(pady=(20, 0))
+
         username_entry = ttk.Entry(self.signup_tab)
-        username_entry.pack()
+        username_entry.pack(pady=(5, 15))
+
+        password_label = ttk.Label(self.signup_tab, text="Password")
+        password_label.pack()
 
         password_entry = ttk.Entry(self.signup_tab)
-        password_entry.pack()
+        password_entry.pack(pady=(5, 15))
+
+        address_label = ttk.Label(self.signup_tab, text="Address")
+        address_label.pack()
 
         address_entry = ttk.Entry(self.signup_tab)
-        address_entry.pack()
+        address_entry.pack(pady=(5, 15))
 
         login_button = ttk.Button(self.signup_tab, text="Sign Up")
         login_button.pack()
@@ -78,8 +101,10 @@ class Login:
         frame_height = self.r_frame.winfo_height()
         print(frame_width, frame_height)
 
+
         bg_img = Image.open(r"iteration3\images\login_background.png").resize((frame_width, frame_height))
         bg_img = ImageTk.PhotoImage(bg_img)
         self.images.append(bg_img)
         bg_img = Label(self.r_frame, image=self.images[1])
         bg_img.grid()
+
