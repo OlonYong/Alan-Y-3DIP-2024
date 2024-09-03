@@ -11,13 +11,10 @@ class Login:
     def __init__(self, root):
         self.root = root
         self.images = []
-        self.root.tk.call("source", r"assets/iteration3\Forest-ttk-theme-master\forest-dark.tcl")
-        ttk.Style().theme_use(r'forest-dark')
-
 
         self.l_frame = ttk.Frame(self.root)
         self.l_frame.grid(row=0, column=0, sticky="nsew")
-        self.r_frame = ttk.Frame(self.root)
+        self.r_frame = ttk.Frame(self.root )
         self.r_frame.grid(row=0, column=1, sticky="nsew")
         self.root.grid_columnconfigure(0, weight=42)
         self.root.grid_columnconfigure(1, weight=58)
@@ -27,7 +24,7 @@ class Login:
         self.l_frame.grid_propagate(False)
         self.l_frame.grid_columnconfigure(0, weight=1)
         title_frame = ttk.Frame(self.l_frame)
-        title_frame.grid(pady=(30, 80))
+        title_frame.grid(pady=(30, 60))
 
         logo_img = Image.open(r"assets/iteration3\images\logo.png").resize((64, 50))
         logo_img = ImageTk.PhotoImage(logo_img)
@@ -35,7 +32,7 @@ class Login:
         logo = ttk.Label(title_frame, image=self.images[0])
         logo.grid(row=0, column=0, padx=(0, 10))
         title_lbl = ttk.Label(title_frame, text="RecycleAKL", font=("Arial", 30, "bold"), foreground="#2EA53A")
-        title_lbl.grid(row=0, column=1, padx=(20, 0))
+        title_lbl.grid(row=0, column=1, padx=(0, 0))
 
         self.root.after(150, self.get_frame_size)
 
@@ -44,22 +41,22 @@ class Login:
 
 
         self.signup_tab = ttk.Frame(self.tabs)
-        self.signup_tab.grid()
+        self.signup_tab.grid(column=0)
         self.signin_tab = ttk.Frame(self.tabs)
-        self.signin_tab.grid()
+        self.signin_tab.grid(column=2)
         self.tabs.add(self.signin_tab, text="SIGN IN")
         self.tabs.add(self.signup_tab, text="SIGN UP")
         
         self.create_signin_tab()
         self.create_signup_tab()
-
+        
         self.error_label = ttk.Label(self.l_frame, text="")
         self.error_label.grid(pady=(20, 0))
         self.button_text = StringVar()
         self.button_text.set("Sign In")
-        self.action_button = ttk.Button(self.l_frame, textvariable=self.button_text, width=30, command=self.button_clicked)
+        self.action_button = ttk.Button(self.l_frame, textvariable=self.button_text, width=25, command=self.button_clicked)
         self.action_button.grid(pady=(20, 0))
-        self.anonnymous_button = ttk.Button(self.l_frame, text="Continue without signing in", width=30, command=lambda: Details(self.root, "Anonymous", "Anonymous", "Anonymous"))
+        self.anonnymous_button = ttk.Button(self.l_frame, text="Continue without signing in", width=25, command=lambda: Details(self.root, "Anonymous", "Anonymous", "Anonymous"))
         self.anonnymous_button.grid(pady=(20, 0))
         
         style = ttk.Style()
@@ -72,20 +69,22 @@ class Login:
         self.signin_frame = ttk.Frame(self.signin_tab)
         self.signin_frame.pack()
 
-        username_label = ttk.Label(self.signin_tab, text="Username", font=("Calibri", 16), width=35)
-        username_label.pack(pady=(20, 0))
+        username_label = ttk.Label(self.signin_tab, text="Username", font=("Calibri", 16), width=30)
+        username_label.pack(pady=(30, 0))
 
-        self.signin_username_entry = ttk.Entry(self.signin_tab, font=("Calibri", 16), width=35)
-        self.signin_username_entry.pack(pady=(5, 35))
+        self.signin_username_entry = ttk.Entry(self.signin_tab, font=("Calibri", 16), width=30)
+        self.signin_username_entry.pack(pady=(5, 20))
 
-        password_label = ttk.Label(self.signin_tab, text="Password", font=("Calibri", 16), width=35)
+        password_label = ttk.Label(self.signin_tab, text="Password", font=("Calibri", 16), width=30)
         password_label.pack()
 
-        self.signin_password_entry = ttk.Entry(self.signin_tab, font=("Calibri", 16), width=35, show="*")
-        self.signin_password_entry.pack(pady=(5, 15))
+        self.password_frame = ttk.Frame(self.signin_tab)
+        self.password_frame.pack()
+        self.signin_password_entry = ttk.Entry(self.password_frame, font=("Calibri", 16), width=30, show="*")
+        self.signin_password_entry.pack(pady=(5, 20))
         self.show_password = False
-        self.show_password_button = ttk.Button(self.signin_tab, text="Show Password", command=self.toggle_password)
-        self.show_password_button.pack(pady=(5, 15))
+        self.show_password_button = ttk.Button(self.password_frame, text="Show Password", command=self.toggle_password)
+        self.show_password_button.pack(pady=(5, 20))
     
     def toggle_password(self):
         if self.show_password:
@@ -101,23 +100,23 @@ class Login:
         self.signup_frame = ttk.Frame(self.signup_tab)
         self.signup_frame.pack()
 
-        username_label = ttk.Label(self.signup_tab, text="Username")
-        username_label.pack(pady=(20, 0))
+        username_label = ttk.Label(self.signup_tab, text="Username", font=("Calibri", 16), width=30)
+        username_label.pack(pady=(30, 0))
 
-        self.signup_username_entry = ttk.Entry(self.signup_tab)
-        self.signup_username_entry.pack(pady=(5, 15))
+        self.signup_username_entry = ttk.Entry(self.signup_tab, font=("Calibri", 16), width=30)
+        self.signup_username_entry.pack(pady=(5, 20))
 
-        password_label = ttk.Label(self.signup_tab, text="Password")
+        password_label = ttk.Label(self.signup_tab, text="Password", font=("Calibri", 16), width=30)
         password_label.pack()
 
-        self.signup_password_entry = ttk.Entry(self.signup_tab)
-        self.signup_password_entry.pack(pady=(5, 15))
+        self.signup_password_entry = ttk.Entry(self.signup_tab, font=("Calibri", 16), width=30)
+        self.signup_password_entry.pack(pady=(5, 20))
 
-        address_label = ttk.Label(self.signup_tab, text="Address")
+        address_label = ttk.Label(self.signup_tab, text="Address", font=("Calibri", 16), width=30)
         address_label.pack()
 
-        self.address_entry = ttk.Entry(self.signup_tab)
-        self.address_entry.pack(pady=(5, 15))
+        self.address_entry = ttk.Entry(self.signup_tab, font=("Calibri", 16), width=30)
+        self.address_entry.pack(pady=(5, 20))
 
     def on_tab_change(self, event):
         active_tab = self.tabs.index(self.tabs.select())
