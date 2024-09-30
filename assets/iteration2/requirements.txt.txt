@@ -1,6 +1,0 @@
-tkinter
-PIL
-ctypes
-requests
-datetime
-json
