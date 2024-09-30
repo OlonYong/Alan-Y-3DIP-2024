@@ -1,0 +1,802 @@
+{
+    "1": {
+        "question": "Can you recycle Tetra Paks in Auckland?",
+        "a": "Yes, they are recyclable",
+        "b": "No, they are not recyclable",
+        "c": "Only if they are clean",
+        "d": "Only in the yellow bin",
+        "answer": "b"
+    },
+    "2": {
+        "question": "Which bin should glass bottles go into?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Blue bin",
+        "d": "Green bin",
+        "answer": "a"
+    },
+    "3": {
+        "question": "Can you recycle soft plastic (e.g., plastic bags) in your yellow bin?",
+        "a": "Yes",
+        "b": "No",
+        "c": "Only if it's clean",
+        "d": "Only in special recycling locations",
+        "answer": "b"
+    },
+    "4": {
+        "question": "Which bin do food scraps belong in if you have a food scraps collection service?",
+        "a": "Red bin",
+        "b": "Yellow bin",
+        "c": "Green bin",
+        "d": "Composting bin",
+        "answer": "c"
+    },
+    "5": {
+        "question": "Is it necessary to rinse recyclable containers before placing them in the yellow bin?",
+        "a": "Yes, always",
+        "b": "No, it doesn't matter",
+        "c": "Only for glass",
+        "d": "Only if there's leftover food or liquid",
+        "answer": "d"
+    },
+    "6": {
+        "question": "Can broken drinking glasses be recycled in the yellow bin?",
+        "a": "Yes",
+        "b": "No, they belong in the red bin",
+        "c": "Only in the blue bin",
+        "d": "Only if wrapped",
+        "answer": "b"
+    },
+    "7": {
+        "question": "Which of these items cannot be placed in the yellow bin?",
+        "a": "Cardboard boxes",
+        "b": "Aluminium cans",
+        "c": "Plastic wrap",
+        "d": "Glass jars",
+        "answer": "c"
+    },
+    "8": {
+        "question": "Where should you dispose of electronic waste (e.g., old phones)?",
+        "a": "Red bin",
+        "b": "Yellow bin",
+        "c": "At an e-waste recycling center",
+        "d": "Green bin",
+        "answer": "c"
+    },
+    "9": {
+        "question": "Can you recycle pizza boxes that have grease stains?",
+        "a": "Yes, in the yellow bin",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are clean",
+        "d": "In the green bin",
+        "answer": "b"
+    },
+    "10": {
+        "question": "Can you recycle plastic bottles with caps on?",
+        "a": "Yes, but remove the caps first",
+        "b": "Yes, leave the caps on",
+        "c": "No, neither the bottle nor the cap can be recycled",
+        "d": "Only if the cap is larger than a bottle cap",
+        "answer": "a"
+    },
+    "11": {
+        "question": "What should you do with aerosol cans?",
+        "a": "Put them in the red bin",
+        "b": "Put them in the yellow bin",
+        "c": "Take them to a hazardous waste collection center",
+        "d": "Only recycle if they are empty",
+        "answer": "c"
+    },
+    "12": {
+        "question": "Which plastic types are recyclable in Auckland's yellow bin?",
+        "a": "All plastics",
+        "b": "Only plastics with numbers 1, 2, and 5",
+        "c": "Only plastic with a number 7",
+        "d": "Only if they are clean",
+        "answer": "b"
+    },
+    "13": {
+        "question": "Where do used batteries go for disposal?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "E-waste or special battery recycling centers",
+        "d": "Green bin",
+        "answer": "c"
+    },
+    "14": {
+        "question": "Are polystyrene containers recyclable in Auckland's yellow bin?",
+        "a": "Yes",
+        "b": "No",
+        "c": "Only if they are clean",
+        "d": "Only in special recycling bins",
+        "answer": "b"
+    },
+    "15": {
+        "question": "What should you do with garden waste if you don't have a green bin?",
+        "a": "Put it in the red bin",
+        "b": "Compost it at home or take it to a composting facility",
+        "c": "Put it in the yellow bin",
+        "d": "Leave it out for collection",
+        "answer": "b"
+    },
+    "16": {
+        "question": "Can you recycle metal bottle caps in the yellow bin?",
+        "a": "Yes, but they must be placed inside an aluminium can",
+        "b": "Yes, on their own",
+        "c": "No, they belong in the red bin",
+        "d": "No, they belong in the green bin",
+        "answer": "a"
+    },
+    "17": {
+        "question": "What should you do with leftover cooking oil?",
+        "a": "Pour it down the drain",
+        "b": "Put it in the red bin",
+        "c": "Take it to a special waste collection point",
+        "d": "Compost it",
+        "answer": "c"
+    },
+    "18": {
+        "question": "Are light bulbs recyclable in the yellow bin?",
+        "a": "Yes",
+        "b": "No, they belong in the red bin",
+        "c": "Only incandescent ones",
+        "d": "Only fluorescent ones",
+        "answer": "b"
+    },
+    "19": {
+        "question": "Which of these items can you put in the yellow bin?",
+        "a": "Plastic straws",
+        "b": "Empty aluminium cans",
+        "c": "Food waste",
+        "d": "Ceramic plates",
+        "answer": "b"
+    },
+    "20": {
+        "question": "Can you recycle paper towels in the yellow bin?",
+        "a": "Yes",
+        "b": "No, they belong in the red bin",
+        "c": "Only clean ones",
+        "d": "Only if they're wet",
+        "answer": "b"
+    },
+    "21": {
+        "question": "Where should you dispose of used plastic cutlery?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Special collection point",
+        "answer": "b"
+    },
+    "22": {
+        "question": "Can you recycle aluminium foil in the yellow bin?",
+        "a": "Yes, as long as it's clean and scrunched into a ball",
+        "b": "No, it goes in the red bin",
+        "c": "Only if it's flat",
+        "d": "Only if it's wrapped in plastic",
+        "answer": "a"
+    },
+    "23": {
+        "question": "Are takeaway coffee cups recyclable in the yellow bin?",
+        "a": "Yes, all types",
+        "b": "No, they go in the red bin",
+        "c": "Only the plastic lid is recyclable",
+        "d": "Only compostable ones are allowed",
+        "answer": "c"
+    },
+    "24": {
+        "question": "Which bin should you use for disposing of nappies?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Special waste collection point",
+        "answer": "b"
+    },
+    "25": {
+        "question": "Can you put flattened cardboard in the yellow bin?",
+        "a": "Yes, always",
+        "b": "No, it should go in the red bin",
+        "c": "Only if it's clean",
+        "d": "Only if it's stacked together",
+        "answer": "a"
+    },
+    "26": {
+        "question": "What should you do with old paint cans?",
+        "a": "Put them in the yellow bin",
+        "b": "Take them to a hazardous waste collection point",
+        "c": "Throw them in the red bin",
+        "d": "Recycle them only if empty",
+        "answer": "b"
+    },
+    "27": {
+        "question": "Can you recycle plastic plant pots in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only in the green bin",
+        "d": "Take them to a garden center",
+        "answer": "a"
+    },
+    "28": {
+        "question": "Can you put scrap metal in the yellow bin?",
+        "a": "Yes",
+        "b": "No, take it to a metal recycling facility",
+        "c": "Only small pieces",
+        "d": "Only if it's aluminium",
+        "answer": "b"
+    },
+    "29": {
+        "question": "Where do plastic lids smaller than a credit card go?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Take them to a special collection point",
+        "answer": "b"
+    },
+    "30": {
+        "question": "Are wine corks recyclable in the yellow bin?",
+        "a": "Yes, both plastic and natural corks",
+        "b": "No, they belong in the red bin",
+        "c": "Only natural corks",
+        "d": "Only plastic corks",
+        "answer": "b"
+    },
+    "31": {
+        "question": "What should you do with old clothes?",
+        "a": "Put them in the red bin",
+        "b": "Recycle them in the yellow bin",
+        "c": "Donate them or take them to a textile recycling center",
+        "d": "Leave them for kerbside collection",
+        "answer": "c"
+    },
+    "32": {
+        "question": "Can you recycle plastic meat trays in Auckland's yellow bin?",
+        "a": "Yes, if they are rinsed",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they have a #5 recycling symbol",
+        "d": "Only compostable trays are allowed",
+        "answer": "c"
+    },
+    "33": {
+        "question": "Are steel cans recyclable in the yellow bin?",
+        "a": "Yes",
+        "b": "No",
+        "c": "Only if the labels are removed",
+        "d": "Only if they are clean",
+        "answer": "a"
+    },
+    "34": {
+        "question": "Which bin should garden hoses be disposed of in?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Special waste collection point",
+        "answer": "b"
+    },
+    "35": {
+        "question": "Are milk cartons recyclable in the yellow bin?",
+        "a": "Yes, all types",
+        "b": "No, they belong in the red bin",
+        "c": "Only cartons with a plastic lining",
+        "d": "Only Tetra Paks are not recyclable",
+        "answer": "a"
+    },
+    "36": {
+        "question": "Can you recycle paper with staples in it?",
+        "a": "Yes, you can leave the staples in",
+        "b": "No, staples must be removed first",
+        "c": "Only if it's shredded first",
+        "d": "Only in special recycling bins",
+        "answer": "a"
+    },
+    "37": {
+        "question": "Can you put polythene or plastic packaging (bubble wrap) in the yellow bin?",
+        "a": "Yes",
+        "b": "No, it should go to a soft plastic recycling location",
+        "c": "Only if it's clean",
+        "d": "Only in the red bin",
+        "answer": "b"
+    },
+    "38": {
+        "question": "Where should light cardboard packaging (e.g., cereal boxes) go?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Composting bin",
+        "answer": "a"
+    },
+    "39": {
+        "question": "What should you do with metal hangers?",
+        "a": "Put them in the yellow bin",
+        "b": "Put them in the red bin",
+        "c": "Take them to a metal recycling center",
+        "d": "Compost them",
+        "answer": "c"
+    },
+    "40": {
+        "question": "Can you recycle biscuit trays in Auckland's yellow bin?",
+        "a": "Yes, always",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they have a #1 or #2 symbol",
+        "d": "Only if they are compostable",
+        "answer": "c"
+    },
+    "41": {
+        "question": "Where should you dispose of polystyrene foam packaging (e.g., from electronics)?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Special collection point",
+        "answer": "b"
+    },
+    "42": {
+        "question": "Can you recycle plastic food containers with food residue in the yellow bin?",
+        "a": "Yes, as long as it's minimal",
+        "b": "No, they need to be rinsed first",
+        "c": "Only if it's glass",
+        "d": "Only in the green bin",
+        "answer": "b"
+    },
+    "43": {
+        "question": "What should you do with old blankets and linens?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Donate them or take them to textile recycling",
+        "d": "Leave them out for kerbside collection",
+        "answer": "c"
+    },
+    "44": {
+        "question": "Can you recycle plastic clamshell containers (e.g., berry containers) in the yellow bin?",
+        "a": "Yes, if they have a #1 or #2 symbol",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are clean",
+        "d": "Only in the green bin",
+        "answer": "a"
+    },
+    "45": {
+        "question": "Are paper bags recyclable in the yellow bin?",
+        "a": "Yes, always",
+        "b": "No, they go in the red bin",
+        "c": "Only if they are clean",
+        "d": "Only if they have no food residue",
+        "answer": "a"
+    },
+    "46": {
+        "question": "Where do garden waste clippings go if you don't have a green bin?",
+        "a": "Red bin",
+        "b": "Yellow bin",
+        "c": "Compost them at home or take them to a composting facility",
+        "d": "Leave them out for special collection",
+        "answer": "c"
+    },
+    "47": {
+        "question": "Can you recycle empty deodorant cans in the yellow bin?",
+        "a": "Yes, but only if they are empty",
+        "b": "No, they belong in the red bin",
+        "c": "Take them to a hazardous waste collection point",
+        "d": "Only if they have a recycling symbol",
+        "answer": "a"
+    },
+    "48": {
+        "question": "Are compostable plastic cups recyclable in the yellow bin?",
+        "a": "Yes",
+        "b": "No, they go in the red bin",
+        "c": "Only if they are clean",
+        "d": "They go in the compost bin",
+        "answer": "d"
+    },
+    "49": {
+        "question": "Can you recycle used coffee grounds?",
+        "a": "Yes, put them in the yellow bin",
+        "b": "No, they belong in the red bin",
+        "c": "They go in the compost bin or green bin",
+        "d": "They should be taken to a special recycling point",
+        "answer": "c"
+    },
+    "50": {
+        "question": "What should you do with broken ceramic plates?",
+        "a": "Put them in the yellow bin",
+        "b": "Wrap them and put them in the red bin",
+        "c": "Take them to a special recycling center",
+        "d": "Only recycle if they're broken into small pieces",
+        "answer": "b"
+    },
+    "51": {
+        "question": "Where do paper towels with food residue go?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Composting bin",
+        "answer": "d"
+    },
+    "52": {
+        "question": "Are aluminum pie trays recyclable in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if stacked together",
+        "d": "Only if the label is removed",
+        "answer": "a"
+    },
+    "53": {
+        "question": "Can polystyrene takeaway containers go in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they have a #6 recycling symbol",
+        "d": "Only in the compost bin",
+        "answer": "b"
+    },
+    "54": {
+        "question": "What should you do with old keys?",
+        "a": "Put them in the yellow bin",
+        "b": "Throw them in the red bin",
+        "c": "Take them to a metal recycling center",
+        "d": "Compost them",
+        "answer": "c"
+    },
+    "55": {
+        "question": "Can you recycle envelopes with plastic windows in the yellow bin?",
+        "a": "Yes, you can leave the plastic window in",
+        "b": "No, remove the plastic window first",
+        "c": "Only compostable ones are allowed",
+        "d": "Only if the plastic is removed",
+        "answer": "a"
+    },
+    "56": {
+        "question": "What bin should you put paper egg cartons in?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Compost bin",
+        "d": "They are not recyclable",
+        "answer": "a"
+    },
+    "57": {
+        "question": "Are plastic bread tags recyclable in Auckland's yellow bin?",
+        "a": "Yes, always",
+        "b": "No, they go in the red bin",
+        "c": "Only if they are clean",
+        "d": "Only at special collection points",
+        "answer": "d"
+    },
+    "58": {
+        "question": "Can you recycle metal lids from jars?",
+        "a": "Yes, but they must be attached to the jar",
+        "b": "Yes, but they must be placed inside a can",
+        "c": "No, they belong in the red bin",
+        "d": "Only if they have a recycling symbol",
+        "answer": "b"
+    },
+    "59": {
+        "question": "Can you recycle plastic takeaway containers in Auckland's yellow bin?",
+        "a": "Yes, if they are clean and have a #1 or #2 symbol",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they have a recycling symbol",
+        "d": "Only if they are compostable",
+        "answer": "a"
+    },
+    "60": {
+        "question": "What should you do with old CDs or DVDs?",
+        "a": "Put them in the yellow bin",
+        "b": "Put them in the red bin",
+        "c": "Take them to an e-waste recycling facility",
+        "d": "Compost them",
+        "answer": "c"
+    },
+    "61": {
+        "question": "Can you recycle cardboard pizza boxes with grease stains in the yellow bin?",
+        "a": "Yes, always",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they have minimal grease",
+        "d": "Only if the greasy part is removed",
+        "answer": "c"
+    },
+    "62": {
+        "question": "Where should you dispose of batteries in Auckland?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Take them to a battery recycling facility",
+        "d": "Leave them out for kerbside collection",
+        "answer": "c"
+    },
+    "63": {
+        "question": "Can glass bottles with lids still attached go in the yellow bin?",
+        "a": "Yes, but the lids must be metal",
+        "b": "No, the lids must be removed",
+        "c": "Only if the lids are plastic",
+        "d": "Only if they are clean",
+        "answer": "b"
+    },
+    "64": {
+        "question": "What should you do with an old toaster?",
+        "a": "Put it in the yellow bin",
+        "b": "Put it in the red bin",
+        "c": "Take it to an e-waste recycling facility",
+        "d": "Dispose of it at a landfill",
+        "answer": "c"
+    },
+    "65": {
+        "question": "Can you recycle plastic straws in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are compostable",
+        "d": "Only if they are part of a plastic bottle",
+        "answer": "b"
+    },
+    "66": {
+        "question": "Can you compost coffee filters in Auckland?",
+        "a": "Yes, but only if they are made from unbleached paper",
+        "b": "No, they belong in the red bin",
+        "c": "Only in the green bin",
+        "d": "Yes, they can go in the compost bin",
+        "answer": "d"
+    },
+    "67": {
+        "question": "Where should you dispose of garden hoses?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Take them to a specialized recycling facility",
+        "answer": "b"
+    },
+    "68": {
+        "question": "Can you recycle aluminum foil in the yellow bin?",
+        "a": "Yes, if it's clean and balled up",
+        "b": "No, it belongs in the red bin",
+        "c": "Only if it's thick foil",
+        "d": "Only if it's free from food residue",
+        "answer": "a"
+    },
+    "69": {
+        "question": "What should you do with a broken mirror?",
+        "a": "Put it in the yellow bin",
+        "b": "Put it in the red bin",
+        "c": "Take it to a landfill",
+        "d": "Take it to a recycling facility",
+        "answer": "b"
+    },
+    "70": {
+        "question": "Can you recycle paperback books in Auckland's yellow bin?",
+        "a": "Yes, always",
+        "b": "No, they belong in the red bin",
+        "c": "Only if the cover is removed",
+        "d": "Yes, but the binding must be removed",
+        "answer": "a"
+    },
+    "71": {
+        "question": "What should you do with used cooking oil?",
+        "a": "Pour it down the drain",
+        "b": "Put it in the yellow bin",
+        "c": "Dispose of it in the red bin",
+        "d": "Take it to a specialized recycling facility",
+        "answer": "d"
+    },
+    "72": {
+        "question": "Can you recycle polystyrene trays used for meat in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they have a recycling symbol",
+        "d": "Only if they are cut into small pieces",
+        "answer": "b"
+    },
+    "73": {
+        "question": "Can metal bottle caps go in the yellow bin?",
+        "a": "Yes, if they are placed inside a metal can",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are loose",
+        "d": "Only if the bottle is also metal",
+        "answer": "a"
+    },
+    "74": {
+        "question": "Where should you dispose of fluorescent light bulbs?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Take them to a hazardous waste collection point",
+        "d": "They can go in the green bin",
+        "answer": "c"
+    },
+    "75": {
+        "question": "Can you recycle large cardboard boxes in Auckland's yellow bin?",
+        "a": "Yes, if they are flattened",
+        "b": "No, they need to go to a recycling center",
+        "c": "Only if they are smaller than 1 meter",
+        "d": "Only if they are clean",
+        "answer": "a"
+    },
+    "76": {
+        "question": "Are pet food tins recyclable in the yellow bin?",
+        "a": "Yes, as long as they are rinsed",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are washed thoroughly",
+        "d": "Only if they have no label",
+        "answer": "a"
+    },
+    "77": {
+        "question": "What should you do with wooden chopsticks?",
+        "a": "Put them in the yellow bin",
+        "b": "Compost them",
+        "c": "Put them in the red bin",
+        "d": "Leave them out for kerbside collection",
+        "answer": "b"
+    },
+    "78": {
+        "question": "Can you recycle plastic milk bottle tops in the yellow bin?",
+        "a": "Yes, if they are left on the bottle",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are clean",
+        "d": "Only if they are removed from the bottle",
+        "answer": "a"
+    },
+    "79": {
+        "question": "Where should you dispose of garden waste, like weeds, in Auckland?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Green bin",
+        "d": "Take them to a composting facility",
+        "answer": "c"
+    },
+    "80": {
+        "question": "Can you recycle old prescription glasses?",
+        "a": "Yes, in the yellow bin",
+        "b": "No, they belong in the red bin",
+        "c": "Take them to a charity or optician for recycling",
+        "d": "They are not recyclable",
+        "answer": "c"
+    },
+    "81": {
+        "question": "Can you recycle empty aerosol cans in the yellow bin?",
+        "a": "Yes, if they are empty and dry",
+        "b": "No, they belong in the red bin",
+        "c": "Only if the nozzle is removed",
+        "d": "Only if they are metal",
+        "answer": "a"
+    },
+    "82": {
+        "question": "What should you do with clothing and textiles that are not suitable for donation?",
+        "a": "Put them in the yellow bin",
+        "b": "Put them in the red bin",
+        "c": "Take them to a textile recycling facility",
+        "d": "Leave them out for kerbside collection",
+        "answer": "c"
+    },
+    "83": {
+        "question": "Where should you dispose of used paint cans in Auckland?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Take them to a hazardous waste collection point",
+        "d": "They belong in the landfill",
+        "answer": "c"
+    },
+    "84": {
+        "question": "Can you recycle polystyrene foam packaging in the yellow bin?",
+        "a": "Yes, if it's clean",
+        "b": "No, it belongs in the red bin",
+        "c": "Only if it's marked with a recycling symbol",
+        "d": "Only if it's broken into small pieces",
+        "answer": "b"
+    },
+    "85": {
+        "question": "Can soft plastic bags be recycled in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are shredded",
+        "d": "Take them to a soft plastics collection point",
+        "answer": "d"
+    },
+    "86": {
+        "question": "Are steel food cans recyclable in Auckland's yellow bin?",
+        "a": "Yes, if they are clean and dry",
+        "b": "No, they belong in the red bin",
+        "c": "Only if the labels are removed",
+        "d": "Only if they are crushed",
+        "answer": "a"
+    },
+    "87": {
+        "question": "Can you recycle plastic plant pots in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are made of hard plastic",
+        "d": "Take them to a garden center for recycling",
+        "answer": "d"
+    },
+    "88": {
+        "question": "Where should you dispose of old garden tools like spades or shears?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Take them to a metal recycling facility",
+        "d": "Leave them out for kerbside collection",
+        "answer": "c"
+    },
+    "89": {
+        "question": "Can you recycle metal cookware (e.g., frying pans) in the yellow bin?",
+        "a": "Yes, if it's clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if the handle is removed",
+        "d": "Take them to a metal recycling facility",
+        "answer": "d"
+    },
+    "90": {
+        "question": "Can you recycle plastic takeaway containers in the yellow bin?",
+        "a": "Yes, if they are clean",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are compostable",
+        "d": "Only if the lid is removed",
+        "answer": "a"
+    },
+    "91": {
+        "question": "Where should you dispose of disposable nappies?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Compost bin",
+        "d": "Green bin",
+        "answer": "b"
+    },
+    "92": {
+        "question": "Can you recycle glass jars with paper labels in the yellow bin?",
+        "a": "Yes, the labels can stay on",
+        "b": "No, the labels must be removed",
+        "c": "Only if they are removed completely",
+        "d": "Only if they are clean",
+        "answer": "a"
+    },
+    "93": {
+        "question": "What should you do with broken ceramic items like plates or mugs?",
+        "a": "Put them in the yellow bin",
+        "b": "Put them in the red bin",
+        "c": "Take them to a recycling facility",
+        "d": "Compost them",
+        "answer": "b"
+    },
+    "94": {
+        "question": "Can you recycle plastic bottle pumps (e.g., soap pumps) in the yellow bin?",
+        "a": "Yes, if they are removed from the bottle",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are clean",
+        "d": "Only if they are separated from the lid",
+        "answer": "b"
+    },
+    "95": {
+        "question": "Where should you dispose of polythene wraps and packaging?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Soft plastics recycling collection",
+        "d": "Take them to a landfill",
+        "answer": "c"
+    },
+    "96": {
+        "question": "Can you recycle shredded paper in the yellow bin?",
+        "a": "Yes, as long as it's in a paper bag",
+        "b": "No, it belongs in the red bin",
+        "c": "Only if it's bundled with non-shredded paper",
+        "d": "Only if it's placed in a cardboard box",
+        "answer": "a"
+    },
+    "97": {
+        "question": "Can you recycle envelopes with plastic windows in the yellow bin?",
+        "a": "Yes, the plastic windows don't need to be removed",
+        "b": "No, they belong in the red bin",
+        "c": "Only if the plastic is removed",
+        "d": "Only if the envelope is clean",
+        "answer": "a"
+    },
+    "98": {
+        "question": "Where should you dispose of old mobile phones?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "E-waste recycling facility",
+        "d": "Send them back to the manufacturer",
+        "answer": "c"
+    },
+    "99": {
+        "question": "Can you recycle paper receipts in the yellow bin?",
+        "a": "Yes, always",
+        "b": "No, they belong in the red bin",
+        "c": "Only if they are not thermal paper",
+        "d": "Only if they are clean",
+        "answer": "c"
+    },
+    "100": {
+        "question": "Where should you dispose of old lightbulbs that are not energy-saving?",
+        "a": "Yellow bin",
+        "b": "Red bin",
+        "c": "Take them to a recycling facility",
+        "d": "Green bin",
+        "answer": "c"
+    }
+}    
