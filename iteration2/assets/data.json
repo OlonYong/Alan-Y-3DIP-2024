@@ -1,0 +1,38 @@
+{
+    "plastic": {
+        "type": "Type-1 PET \nSoft drink and water bottles, food containers\n\nType-2 HDPE \nPlastic shopping bags, milk bottles, ice cream containers, juice bottles, shampoo, buckets\n\nType-3 PVC \nCosmetic containers, electrical conduit, plumbing pipes, wall cladding, roof sheeting, Garden hose, shoe soles, cable sheathing, tubing, and watch straps)\n\nType-4 LDPE \nCling wrap, rubbish bags, squeeze bottles, and shrink wrap\n\nType-5 PP \nDip pottles and ice cream tubs, potato chip bags, straws, microwave dishes, kettles, garden furniture, lunch boxes, blue packing tape, automotive parts)\n\nType-6 PS \nCD cases, plastic cutlery, low-cost brittle toys, video cases, water station cup, safety helmets\n\nType-7 OTHER \nPackaging, car parts, appliance parts, computers, electronics, water cooler bottles, devices",
+        "recycle": "Type-1 PET\nType-2 HDPE\nType-5 PP",
+        "rubbish": "Type-3 PVC\nType-4 LDPE\nType-6 PS\nType-7 OTHER",
+        "tips": "Look for the triangle formed with three arrows and check the number in the middle.\nRinse plastic containers before recycling."
+    },
+    "glass": {
+        "type": "Bottles \nwine, beer, and spirits bottles\nJars \njam, pickle, and sauce jars\nFood containers \nglass containers for food storage",
+        "recycle": "Clear glass bottles and jars\nGreen glass bottles and jars\nBrown glass bottles and jars",
+        "rubbish": "Broken glass\nDrinking glasses and tumblers\nWindow glass\nMirrors\nLight bulbs\nOvenware and ceramics\nPyrex glass\nGlass cookware",
+        "tips": "Remove lids and caps before recycling.\nRinse the glass items to remove any food residue."
+    },
+    "paper": {
+        "type": "Office paper \nprinter paper, notebooks, envelopes\nNewspapers and magazines\nCardboard \nboxes, packaging\nPaper bags\nJunk mail\nPaperboard \ncereal boxes, tissue boxes",
+        "recycle": "Office paper (white and coloured)\nNewspapers and magazines\nCardboard boxes\nPaper bags\nJunk mail (remove any plastic windows)\nPaperboard (flattened)\nTelephone books",
+        "rubbish": "Paper with food residue (greasy pizza boxes)\nPaper towels and napkins\nTissues\nWaxed paper\nLaminated paper\nWallpaper\nDisposable coffee cups (unless specifically marked as recyclable)\nSticky notes (check with local recycling guidelines)",
+        "tips": "Remove any plastic, metal, or other non-paper materials (e.g., plastic windows from envelopes).\nFlatten cardboard boxes to save space in the recycling bin.\nKeep paper dry to ensure it can be recycled.\nAvoid shredding paper if possible, as shredded paper is harder to recycle."
+    },
+    "metal": {
+        "type": "Aluminium \ncans, foil, trays\nSteel \ncans, food tins, aerosol cans\nTin \nfood cans\nMixed metal items \nsmall appliances, tools",
+        "recycle": "Aluminium cans (soda, beer cans)\nAluminium foil and trays (clean)\nSteel cans (soup, vegetable cans)\nTin cans\nEmpty aerosol cans (non-hazardous)\nMetal lids from jars and bottles\nSmall metal items (nails, screws)",
+        "rubbish": "Metal items with non-metal parts (unless separated)\nPaint cans (unless empty and dry)\nBatteries\nElectronic waste (phones, computers)\nHazardous material containers (gas canisters, propane tanks)\nLarge metal items (car parts, large appliances)\nScrap metal (check local facilities for specific recycling)",
+        "tips": "Rinse food and drink containers to remove any residue.\nRemove any non-metal parts (e.g., plastic lids).\nCrush cans if possible to save space in the recycling bin."
+    },
+    "organic": {
+        "type": "Fruit and vegetable scraps including peelings, cores, stalks, and skin.\nBread, pasta, and rice.\nDairy products.\nMeat bones and scraps including fat trimmings.\nFish bones and scraps including shellfish shells.\nEgg shells, nut shells, and coconut husks.\nCoffee grounds and tea leaves.\nFats/oils - solidified (if possible).\nIndoor cut flowers.\nAny type of certified home compostable bin liner.\nPaper to line your kitchen caddy to help soak up any liquids.",
+        "rubbish": "Disposable food containers (including compostable items).\nFood wrapping including cling film, waxed paper, or aluminium foil.\nNappies and sanitary products.\nPet waste.\nLiquids or chemicals.\nCigarette butts.\nSoil or rocks.\nGarden waste like weeds, lawn clippings, or hedge trimmings.\nTea/coffee bags.",
+        "recycle": "Meat and fish scraps (check local guidelines for composting options)\nPlastic or non-biodegradable items\nChemicals or hazardous waste\nLarge branches or logs (check for collection services)",
+        "tips": "keep it clean: Rinse food containers before placing in organic bins to avoid odors.\ncompost at home: Consider starting a compost bin for additional organic waste recycling.\nuse paper bags: Use compostable or paper bags for collecting food scraps to make disposal easier.\nlayer it up: Alternate between green (food scraps) and brown (dry leaves, cardboard) materials if composting at home.\nstay updated: Check Auckland Council's website for any changes to organic waste collection guidelines."
+    },
+    "ewaste": {
+        "type": "Small appliances \ntoasters, blenders, hairdryers\nPersonal electronics \nphones, tablets, laptops\nOffice electronics \nprinters, monitors, desktop computers\nEntertainment devices \nTVs, gaming consoles, speakers\nBatteries \nrechargeable, single-use\nCables and chargers",
+        "recycle": "Small appliances (check with Auckland Council for specific items)\nMobile phones, tablets, and laptops (check local guidelines)\nPrinters, scanners, and monitors (small items only)\nCables, chargers, and power strips (small items only)\nRechargeable and single-use batteries (at designated drop-off points, not in kerbside bins)",
+        "rubbish": "Large appliances (refrigerators, washing machines, air conditioners)\nHazardous material items (items containing mercury or lead)\nMixed materials that cannot be easily separated\nDamaged items not accepted by local facilities\nLight bulbs (CFLs, LEDs, fluorescent tubes) - must be taken to designated drop-off points",
+        "tips": "safe disposal: Always remove personal data from devices before recycling. Perform a factory reset on phones and computers.\ncheck for local events: Look out for community e-waste collection events, which may offer additional disposal options.\nuse designated drop-off points: For batteries and larger e-waste, find your nearest drop-off location to ensure proper recycling.\navoid contamination: Keep e-waste separate from regular rubbish to prevent contamination and ensure recycling efficiency.\nstay informed: Regularly check Auckland Council's website for updates on accepted items and any changes in recycling policies."
+    }
+}
